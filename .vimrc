@@ -26,9 +26,6 @@ Plugin 'VundleVim/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 "
-" Powerline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-"
 " NerdTree
 Plugin 'scrooloose/nerdtree'
 "
@@ -50,8 +47,12 @@ filetype plugin indent on    " required
 " ---End Vundle specific inclusions
 
 " Powerline Setup
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
-set laststatus=2
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set guifont=UbuntuMono\ derivative\ Powerline\ 13
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set termencoding=utf-8
 
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim (usually just
 " /usr/share/vim/vimcurrent/debian.vim) and sourced by the call to :runtime
