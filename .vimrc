@@ -35,9 +35,6 @@ Plugin 'scrooloose/nerdtree'
 " Vim-Colors-Solarized
 Plugin 'altercation/vim-colors-solarized'
 "
-" Kolor theme
-Plugin 'zeis/vim-kolor'
-"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,7 +125,6 @@ set t_Co=256
 let g:solarized_termcolors=256
 syntax enable
 set background=dark
-"colorscheme kolor
 colorscheme solarized
 "set guifont=Consolas:h12
 
