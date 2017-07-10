@@ -5,3 +5,5 @@
     * ``mv vim-profile .vim``
 * You will also need to 'symlink' the '.vimrc' file to your root HOME directory:
     * ``ln -s /home/<user>/.vim/.vimrc /home/<user>/.vimrc``
+* Set the new '.vimrc' as the 'source' to use in your terminal session:
+    * ``source ~/.vimrc``
