@@ -6,4 +6,6 @@
 * You will also need to 'symlink' the '.vimrc' file to your root HOME directory:
     * ``ln -s /home/<user>/.vim/.vimrc /home/<user>/.vimrc``
 * Set the new '.vimrc' as the 'source' to use in your terminal session:
-    * ``source ~/.vimrc``
+    * ``source ~/.vimrc
+* CD to 'bundle/YouCompleteMe' and ensure are initialized and downloaded:
+	* ``git submodule update --init --recursive```
