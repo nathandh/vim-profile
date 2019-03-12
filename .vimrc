@@ -38,6 +38,11 @@ Plugin 'powerline/powerline'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+"
+" Pathogen specific invocation
+set rtp+=~/.vim/autoload/
+execute pathogen#infect()
+"
 filetype plugin indent on    " required
 "
 " VUNDLE help
@@ -58,6 +63,7 @@ let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
+let g:powerline_pycmd = 'py3'
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
