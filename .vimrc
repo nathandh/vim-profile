@@ -3,57 +3,21 @@
 source /apollo/env/envImprovement/var/vimrc
 
 "
-" Vundle specific inclusions
+" Vim Plugin inclusions
 "
 set nocompatible              " be iMproved, required
 filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-"
 " @nathandh See also: https://developer.mozilla.org/en-US/docs/YouCompleteMe
 let g:ycm_confirm_extra_conf = 0
 "http://vi.stackexchange.com/questions/2505/youcompleteme-in-non-code-files-yields-user-defined-completion-unp-patte
 let g:ycm_filetype_whitelist = { 'cpp': 1, 'c': 1, 'python':1, 'html':1 }
 let g:ycm_collect_identifiers_from_tags_files = 1
 "
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-"
-" YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-"
-" NerdTree
-Plugin 'scrooloose/nerdtree'
-"
-" Vim-Colors-Solarized
-Plugin 'altercation/vim-colors-solarized'
-"
-" Powerline
-Plugin 'powerline/powerline'
-"
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-"
 " Pathogen specific invocation
 set rtp+=~/.vim/autoload/
 execute pathogen#infect()
 "
 filetype plugin indent on    " required
-"
-" VUNDLE help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-
-" ---End Vundle specific inclusions
 
 " Powerline Setup
 "set rtp+=/usr/lib/python2.7/dist-packages/powerline/bindings/vim/
